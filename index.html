@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="Scripts/angularJS.js"></script>
+    <link rel="stylesheet" href="Css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="main" ng-app="">
+
+        <div id="color-bar">
+            <div id="nav-bar"></div>
+        </div>
+
+        <div id="content">
+            <div class="display">
+                <div class="row top">RAD</div>
+                <div class="row cal" id="topDis"></div>
+                <div class="row results" id="bottomDis"></div>
+            </div>
+            <div class="operations">
+                <div class="row rows">
+                    <div class="col-1"><button id="btn7" onclick="button7()">7</button></div>
+                    <div class="col-2"><button id="btn8" onclick="button8()">8</button></div>
+                    <div class="col-3"><button id="btn9" onclick="button9()">9</button></div>
+                    <div class="col-4"><button onclick="buttonDel()">DEL</button></div>
+                </div>
+                <div class="row rows">
+                    <div class="col-1"><button id="btn4" onclick="button4()">4</button></div>
+                    <div class="col-2"><button id="btn5" onclick="button5()">5</button></div>
+                    <div class="col-3"><button id="btn6" onclick="button6()">6</button></div>
+                    <div class="col-4"><button id="btnDiv" onclick="buttonDiv()">/</button></div>
+                </div>
+                <div class="row rows">
+                    <div class="col-1"><button id="btn1" onclick="button1()">1</button></div>
+                    <div class="col-2"><button id="btn2" onclick="button2()">2</button></div>
+                    <div class="col-3"><button id="btn3" onclick="button3()">3</button></div>
+                    <div class="col-4"><button id="btnMinus" onclick="buttonMinus()">-</button></div>
+                </div>
+                <div class="row rows">
+                    <div class="col-1"><button id="btnDot" onclick="buttonDot()">.</button></div>
+                    <div class="col-2"><button id="btn0" onclick="button0()">0</button></div>
+                    <div class="col-3"><button id="btnEqual" onclick="buttonEqual()">=</button></div>
+                    <div class="col-4"><button id="btnPlus" onclick="buttonPlus()">+</button></div>
+                </div>
+                <div class="row rows">
+                    <div class="col-1"><button id="btnLeftBra" onclick="buttonLeftBra()">(</button></div>
+                    <div class="col-2"><button id="btnRightBra" onclick="buttonRightBra()">)</button></div>
+                    <div class="col-3"><button id="btnMul" onclick="buttonMul()">*</button></div>
+                    <div class="col-4"><button id="btnPer" onclick="buttonPer()">%</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="nav-bar" class="foot">&copy; 2017 MSRB</div>
+    </div>
+
+</body>
+
+</html>
